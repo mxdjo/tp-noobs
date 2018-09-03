@@ -23,3 +23,14 @@ Avant d'utiliser ce playbook , il faut penser à installer ansible sur notre mac
 Ensuite , ajouter le nom des hôtes ansible sur lesquels Drupal doit être installé au fichier inventory ( par défaut /etc/ansible/hosts )
 Puis  dans le playbook, on pense aussi à modifier le 'hosts' pour qu'il concorde avec notre fichier inventory.
 
+
+## TP2
+Les fichiers du TP2 sont dans le dossier tp2/
+
+Ce sont :
+
+- backup_script.sh: le script de l'exercice A qui permet de sauvegarder un site Web
+- create_user_via_list.sh: le script de création massive de comptes utilisateur 
+- ListeUtilisateurs.txt: fichier test de "create_user_via_list.sh"
+- delete_user_via_list.sh: le script de suppression d'utilisateurs
+-ListeLoginsAsupprimer: fichier test de "delete_user_via_list.sh"
