@@ -1,0 +1,28 @@
+---
+- hosts: 192.168.56.102
+  
+  become: yes
+  become_method: sudo
+  
+  tasks:
+   - name : Installer un pare feu sous ubuntu
+     apt: 
+        name: ufw
+        state: present
+
+   - name: Ouvrir les ports 80 et 8080
+     ufw:
+        rule: allow
+        port: 8080,80
+        proto: tcp
+
+   - name: Fermer les ports 25 et 9000
+     ufw:
+        rule: deny
+        port: 25,9000
+        proto: tcp
+
+   - name: Installer Tomcat
+     apt:
+        name: tomcat7
+        state: present
