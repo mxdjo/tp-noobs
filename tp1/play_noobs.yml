@@ -1,0 +1,49 @@
+---
+
+- hosts: 192.168.56.102
+
+  become: yes
+  become_method: sudo
+
+
+  tasks:
+   - name: Installer LAMP
+     apt:
+       name: "{{ packages }}"
+     vars:
+       packages:
+        - apache2
+        - libapache2-mod-php       
+        - mysql-server
+        - mysql-client
+        - php
+        - php-cli
+        - php-mysql
+        - php-curl
+        - php-gd
+        - php-zip
+        - php-intl
+        - php-mcrypt
+
+   - name: Créer la base de données db_noobs
+     mysql_db:
+       name: db_noobs
+       state: present
+
+   - name: Ajouter un mot de passe pour la bd db_noobs
+     mysql_user:
+      name: noobs
+      password: manage
+       priv:'"db_noobs.*:ALL,GRANT"'
+      state: present
+
+
+   - name: Telecharger l'archive de Drupal 7.28
+     get_url:
+      url:  https://ftp.drupal.org/files/projects/drupal-7.28.tar.gz
+      dest: /var/www/html/drupal.tar.gz
+
+   - name: Desarchiver Drupal dans /var/www/html/
+     unarchive:
+       src: /var/www/html/drupal.tar.gz
+       dest: /var/www/html/drupal
