@@ -35,4 +35,7 @@ Ce sont :
 - delete_user_via_list.sh: le script de suppression d'utilisateurs
 -ListeLoginsAsupprimer: fichier test de "delete_user_via_list.sh"
 
-*Pour que le serveur puisse envoyer le mail à l'administrateur , il faut s'assurer de la présence du paquet mailutils (responsable de la commande "mail".)
+*Pour que le serveur puisse envoyer le mail à l'administrateur , il faut s'assurer de la présence du paquet mailutils (responsable de la commande "mail") et d'un MTA (mail transfer agent) : postfix
+
+La configuration de postfix peut être vue ici [https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/]
+
