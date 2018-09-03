@@ -33,9 +33,9 @@ Ce sont :
 - create_user_via_list.sh: le script de création massive de comptes utilisateur 
 - ListeUtilisateurs.txt: fichier test de "create_user_via_list.sh"
 - delete_user_via_list.sh: le script de suppression d'utilisateurs
--ListeLoginsAsupprimer: fichier test de "delete_user_via_list.sh"
+- ListeLoginsAsupprimer: fichier test de "delete_user_via_list.sh"
 
-*Pour que le serveur puisse envoyer le mail à l'administrateur , il faut s'assurer de la présence du paquet mailutils (responsable de la commande "mail") et d'un MTA (mail transfer agent) : postfix
+* Pour que le serveur puisse envoyer le mail à l'administrateur , il faut s'assurer de la présence du paquet mailutils (responsable de la commande "mail") et d'un MTA (mail transfer agent) : postfix
 
-La configuration de postfix peut être vue ici [https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/]
+La configuration de postfix peut être vue ici (https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/)
 
