@@ -39,3 +39,10 @@ Ce sont :
 
 La configuration de postfix peut être vue ici (https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/)
 
+## TP3
+En cours de réalisation
+
+## TP4 ( donné pendant la seconde séance de travail par Fray)
+
+C'est un TP sur l'utilisation des templates jinja2.
+Cas pratique avec une page index.html
