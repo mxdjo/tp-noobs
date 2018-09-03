@@ -17,3 +17,5 @@ tar -C /var/lib/mysql/db_noobs -zcvf $DESTINATION . >>  /root/`date +%F`-db.log
 
 
 #Envoi du mail à l'administrateur
+echo "Sauvegarde du `date` terminée" | /usr/bin/mail -s "Rapport de sauvegarde" mariofadegnon@gmail.com
+
