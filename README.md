@@ -40,7 +40,14 @@ Ce sont :
 La configuration de postfix peut être vue ici (https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/)
 
 ## TP3
-En cours de réalisation
+
+Les fichiers sont :
+- db.192 : le fichier de resolution inverse
+- db.noobs.net: le fichier de resloution directe
+- hostname : /etc/hostname
+- named.conf.local: Fichiers de definition de zone
+- named.conf.options: Oû est defini les parametres généraux
+- resolv.conf :/etc/resolv.conf le resolveur
 
 ## TP4 ( donné pendant la seconde séance de travail par Fray)
 
