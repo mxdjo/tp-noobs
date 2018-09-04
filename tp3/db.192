@@ -1,0 +1,13 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ubuntusrv1.noobs.net. admin.noobs.net. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ubuntusrv1.noobs.net.
+101	IN	PTR	ubuntusrv1.noobs.net.
