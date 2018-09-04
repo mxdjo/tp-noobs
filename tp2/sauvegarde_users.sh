@@ -4,6 +4,7 @@ for  user in `cat /etc/passwd | cut -d ":" -f 1`; do
 	printf " \nl'utilisateur $user est compatible "
 	printf "\n Sauvegarde de son dossier personnel"
 	tar -C /home/$user -zcf /root/sauvegardes/$user-`date +%F-%T`.tar.gz .
-     fi 
+ 	echo "Sauvegarde des dossiers personnels à la date du `date` terminée" | /usr/bin/mail -s "Rapport de sauvegardes de dossiers" mariofadegnon@gmail.com
+ fi 
 done
 
