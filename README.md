@@ -34,7 +34,7 @@ Ce sont :
 - ListeUtilisateurs.txt: fichier test de "create_user_via_list.sh"
 - delete_user_via_list.sh: le script de suppression d'utilisateurs
 - ListeLoginsAsupprimer: fichier test de "delete_user_via_list.sh"
-
+- sauvegarde_users.sh :sauvegarde des dossiers des utilisateurs 
 * Pour que le serveur puisse envoyer le mail à l'administrateur , il faut s'assurer de la présence du paquet mailutils (responsable de la commande "mail") et d'un MTA (mail transfer agent) : postfix
 
 La configuration de postfix peut être vue ici (https://www.howtoforge.com/tutorial/configure-postfix-to-use-gmail-as-a-mail-relay/)
