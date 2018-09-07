@@ -1,0 +1,6 @@
+[centos6]
+name= depôt d'installation des packages du CD ISO
+baseurl=file:///var/yum/repos.d/centos6/
+enabled=1
+gpgcheck=0
+

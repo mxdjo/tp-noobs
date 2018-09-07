@@ -1,0 +1,1 @@
+/var/yum/repos.d/centos6/ /var/ftp/pub/centos6/ none defaults,bind 0 0
