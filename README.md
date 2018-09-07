@@ -53,3 +53,12 @@ Les fichiers sont :
 
 C'est un TP sur l'utilisation des templates jinja2.
 Cas pratique avec une page index.html
+
+## TP 5
+
+Pour le TP5, il s'agit de mettre en place un dépôt de paquets rpm sous CentOS avec vsftpd
+Les fichiers dans le dossier tp5/ sont :
+- le fichier /etc/yum.repos.d/centos6.repo
+- le fichier /etc/fstab
+
+Les étapes de la mise en place sont ici(https://wp.me/pa5S7z-1S)
